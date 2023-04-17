@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>Spam Detector</title>
+</head>
+<body>
+    <h1>Spam Detector</h1>
+    <p>Enter a message to see if it's spam or not:</p>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <input type="text" name="message" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
